@@ -24,7 +24,6 @@ var (
 	}
 
 	ApiInfoList = map[string]*base.ApiInfo{
-
 		// events
 		"LookupEvents": {
 			Method: http.MethodPost,

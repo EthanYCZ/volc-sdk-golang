@@ -8,7 +8,6 @@ type NullResultResp struct {
 
 // events
 type LookupEventsReq struct {
-	AccountID        int64             `json:"-"`
 	NextToken        string            `json:",omitempty"`
 	MaxResults       int               `json:",omitempty"`
 	StartTime        int64             `json:",omitempty"`

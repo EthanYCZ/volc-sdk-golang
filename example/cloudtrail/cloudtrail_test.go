@@ -21,7 +21,6 @@ func init() {
 
 func TestCloudTrail(t *testing.T) {
 	resp, statusCode, err := cloudtrail.DefaultInstance.LookupEvents(&cloudtrail.LookupEventsReq{
-		AccountID:  1000000000,
 		NextToken:  "",
 		MaxResults: 10,
 		StartTime:  0,

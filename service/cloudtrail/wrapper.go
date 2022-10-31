@@ -3,14 +3,12 @@ package cloudtrail
 import (
 	"encoding/json"
 	"net/url"
-	"strconv"
 )
 
 func (p *CloudTrail) LookupEvents(req *LookupEventsReq) (*LookupEventsResp, int, error) {
 	query := url.Values{}
 	resp := new(LookupEventsResp)
 
-	query.Set("X-Top-Account-Id", strconv.FormatInt(req.AccountID, 10))
 	reqBody, err := json.Marshal(req)
 	if err != nil {
 		return nil, 0, err
